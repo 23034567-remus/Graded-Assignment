@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('signup.png') no-repeat center center fixed;
+            background-size: cover;
+            color: black;
+        }
+        .signup-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 300px;
+        }
+        .signup-container h1 {
+            background-color: pink;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            color: white;
+        }
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            background-color: pink;
+            color: #333;
+            font-size: 25px;
+        }
+        .signup-button {
+            background-color: pink;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 25px;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .or-text {
+            margin: 20px 0;
+            font-size: 25px;
+        }
+        .singpass {
+            width: 150px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <h1>Sign up Page</h1>
+        <p>Sign in using:</p>
+        <form action="login.html" method="post">
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-group">
+                <label for="phone">Phone number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+            <button type="submit" class="signup-button">Sign up</button>
+        </form>
+        <div class="or-text">or</div>
+        <img src="singpass.png" alt="singpass" class="singpass" onclick="location.href='singpass.html'">
+    </div>
+</body>
+</html>
